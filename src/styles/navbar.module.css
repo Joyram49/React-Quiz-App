@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  padding: 2rem 6rem;
+}
+.navbar__brand a {
+  display: flex;
+  justify-content: cetner;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar__brand a img {
+  width: 6rem;
+}
+.navbar__brand a h3 {
+  font-size: 2rem;
+  letter-spacing: -0.03rem;
+  transition: text-shadow 0.3s ease;
+}
+.navbar__brand a h3:hover {
+  text-shadow: 0.3rem 0.5rem 1rem rgba(75, 51, 51, 0.705);
+}

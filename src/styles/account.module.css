@@ -1,0 +1,24 @@
+.account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.account_icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
+.account span:last-child {
+  display: flex;
+}
+.account span > a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.account span > div {
+  width: 0.2rem;
+  height: 2rem;
+  background-color: var(--fontPrimary);
+  margin-left: 1rem;
+}

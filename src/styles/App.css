@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --bodyBackground: #f2f4f8;
+  --successGreen: #00ff84;
+  --dangerRed: #ffc0c7;
+  --questionBG: #e4e8ee;
+  --fontPrimary: #002333;
+  --active: #2dbf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+  border: 0;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bodyBackground);
+}
+.info {
+  font-size: 1.6rem;
+  color: #315e3e;
+}
+.info > a {
+  color: rgba(2, 80, 226, 0.952);
+  font-weight: 600;
+}
+.form_error {
+  color: crimson;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.infinite-scroll-component {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  justify-items: center;
+  gap: 4rem;
+  row-gap: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .infinite-scroll-component {
+    width: 90%;
+  }
+}

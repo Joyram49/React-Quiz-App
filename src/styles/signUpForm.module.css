@@ -1,0 +1,16 @@
+.signUpForm {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formBtn span {
+  color: #2d3301;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+.formBtn:hover span {
+  color: white;
+}

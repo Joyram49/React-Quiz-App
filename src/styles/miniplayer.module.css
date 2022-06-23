@@ -1,0 +1,100 @@
+.miniplayer {
+  width: 32rem;
+  background-color: white;
+  position: fixed;
+  right: 5rem;
+  bottom: 10rem;
+  padding: 1rem;
+  border: 0.1rem solid hsl(0, 0%, 86%);
+  border-radius: 0.5rem;
+  transition: right 0.4s ease;
+}
+.miniplayer .player {
+  width: 30rem;
+  object-fit: cover;
+  animation: miniplayerAnim 0.3s ease forwards;
+}
+
+@keyframes miniplayerAnim {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.miniplayer .close {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  fill: var(--fontPrimary);
+  z-index: 1;
+  transform: scale(0.7);
+}
+
+.close:hover {
+  cursor: pointer;
+  fill: rgb(209, 65, 94);
+  animation: closeAnim 0.3s ease forwards;
+}
+
+@keyframes closeAnim {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.miniplayer p {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.miniplayer .open {
+  display: none;
+}
+
+.floatingBtn {
+  position: fixed;
+  right: 5rem;
+  bottom: 10rem;
+  background-color: var(--fontPrimary);
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.floatingBtn:hover {
+  background-color: var(--successGreen);
+}
+.floatingBtn .open {
+  display: block;
+  fill: var(--successGreen);
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.floatingBtn:hover .open {
+  fill: var(--fontPrimary);
+}
+
+.floatingBtn .player {
+  display: none;
+  transform: scale(0);
+}
+.floatingBtn p {
+  display: none;
+}
+.floatingBtn .close {
+  display: none;
+}

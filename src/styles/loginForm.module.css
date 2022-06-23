@@ -1,0 +1,18 @@
+.loginForm {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formBtn {
+  text-align: center;
+}
+.formBtn span {
+  color: #2d3301;
+  transition: color 0.3s ease;
+}
+.formBtn:hover span {
+  color: white;
+}

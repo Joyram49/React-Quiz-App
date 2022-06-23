@@ -1,0 +1,34 @@
+.answers {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  margin: 3rem 0;
+  grid-auto-flow: column;
+}
+.answer {
+  width: 100%;
+  height: 5.8rem;
+  background: var(--questionBG);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0 1.7rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+.answer:hover {
+  background-color: rgb(99, 106, 107);
+}
+.answer:hover span {
+  color: white;
+}
+.wrong {
+  background-color: var(--dangerRed) !important;
+}
+.correct {
+  background-color: var(--successGreen) !important;
+}
+.noHover {
+  pointer-events: none;
+}

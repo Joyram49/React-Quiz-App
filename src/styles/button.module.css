@@ -1,0 +1,16 @@
+.formBtn {
+  margin: 4rem 0 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: var(--successGreen);
+  padding: 1rem 0;
+  width: 80%;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.formBtn:hover {
+  background-color: rgba(8, 33, 88, 0.726);
+}

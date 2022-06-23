@@ -1,0 +1,118 @@
+.progressbar {
+  width: 95%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 0.1rem solid #ffe;
+  border-radius: 0.4rem;
+  padding: 0.7rem 1.8rem;
+  box-shadow: 0.04rem 0.04rem 0.01rem rgba(0, 0, 0, 0.1),
+    -0.04rem -0.04rem 0.01rem rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.backButton {
+  background-color: var(--successGreen);
+  padding: 0rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.quiz_icon {
+  font-size: 2.5rem;
+}
+.backButton:hover {
+  background-color: var(--fontPrimary);
+}
+.backButton:hover .quiz_icon {
+  fill: white;
+}
+.rangeArea {
+  flex: 1;
+  position: relative;
+}
+.rangeBody {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #ddd;
+  border-radius: 0.4rem;
+}
+
+.progress {
+  height: 0.4rem;
+  background-color: var(--fontPrimary);
+  position: relative;
+  border-radius: 0.4rem;
+}
+.progress::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--fontPrimary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.tooltip {
+  position: relative;
+  background-color: var(--fontPrimary);
+  width: max-content;
+  position: absolute;
+  top: -6.5rem;
+  left: calc(70% - 7rem);
+  padding: 1rem 1.4rem;
+  border-radius: 0.7rem;
+  display: none;
+}
+.tooltip span {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: Capitalize;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--fontPrimary);
+  transform: rotate(45deg) translate(-50%, 100%);
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--successGreen);
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.result span {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.result .quiz_icon {
+  font-size: 2.5rem;
+}
+.result:hover {
+  background-color: var(--fontPrimary);
+}
+.result:hover span {
+  color: white;
+}
+
+.result:hover .quiz_icon {
+  fill: white;
+}
